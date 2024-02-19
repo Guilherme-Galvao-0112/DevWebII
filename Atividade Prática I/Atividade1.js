@@ -8,10 +8,10 @@ Valor total - Desconto = Valor final*/
 
 
 
-var readlineSync = require('readline-sync')
+var readlineSync = require('readline-sync');
 
 var preco = readlineSync.question('\nInforme o valor do Produto: ');
-var quantidade = readlineSync.question('\nInforme a quantidade a ser vendida: ')
+var quantidade = readlineSync.question('\nInforme a quantidade a ser vendida: ');
 var valor_total = preco * quantidade;
 console.log('\nEste é o valor do produto, sem desconto: '+valor_total+'\n');
 var desconto = readlineSync.question('\nInforme o valor do desconto, caso nao tenha desconto informe o valor zero (0): ');
